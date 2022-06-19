@@ -1,0 +1,44 @@
+{
+    "name": "movie-list",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "build": "npx tsc -p server && next build",
+        "start": "npm run build && node server/build/server.js",
+        "lint": "next lint",
+        "client": "next dev",
+        "server": "nodemon server/src/server-dev.ts",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "dependencies": {
+        "@emotion/react": "^11.9.3",
+        "@emotion/styled": "^11.9.3",
+        "@mui/icons-material": "^5.8.4",
+        "@mui/material": "^5.8.4",
+        "@types/express": "^4.17.13",
+        "cors": "^2.8.5",
+        "express": "^4.18.1",
+        "express-fileupload": "^1.4.0",
+        "mongoose": "^6.4.0",
+        "mui-datatables": "^4.2.2",
+        "next": "12.1.6",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.12",
+        "@types/express-fileupload": "^1.2.2",
+        "@types/mui-datatables": "^3.7.9",
+        "@types/node": "18.0.0",
+        "@types/react": "18.0.14",
+        "@types/react-dom": "18.0.5",
+        "concurrently": "^7.2.2",
+        "dotenv": "^16.0.1",
+        "eslint": "8.18.0",
+        "eslint-config-next": "12.1.6",
+        "nodemon": "^2.0.16",
+        "sass": "^1.52.3",
+        "ts-node": "^10.8.1",
+        "typescript": "4.7.4"
+    }
+}
