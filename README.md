@@ -5,12 +5,34 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
+Yarn dev
 # or
-yarn dev
+npm run dev
 ```
+Craete .env file and  set mongodb please use  your mongodb link
+for example : 
+PORT=5000
+DATABASE_URL=mongodb+srv://username:password@movie-list.smdut.mongodb.net/?retryWrites=true&w=majority
+SERVER_ADDRESS=http://localhost:5000
+NEXT_PUBLIC_API_BASE=http://localhost:5000/api
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:5000](http://localhost:5000) with your browser to see the result.
+
+http://localhost:5000/auth/login
+Email: admin@sflix.com
+Password: 123456
+Funtionality:
+-> auth
+-> login
+-> route protection
+-> admin site
+-> public site
+-> Add Movie 
+-> Edit Movie
+-> Delete Movie
+-> List Movie
+-> Search Movie
+
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
