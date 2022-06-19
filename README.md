@@ -21,7 +21,7 @@ Open [http://localhost:5000](http://localhost:5000) with your browser to see the
 http://localhost:5000/auth/login
 Email: admin@sflix.com
 Password: 123456
-Funtionality:
+Functionality
 -> auth
 -> login
 -> route protection
